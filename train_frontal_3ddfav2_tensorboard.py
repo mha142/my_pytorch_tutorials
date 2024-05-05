@@ -1017,7 +1017,7 @@ def train_processed_images_plot_after_every_epoch():
     trainingEpoch_loss = []
     validationEpoch_loss = []
     n_total_steps = len(train_dataset)
-    for epoch in range(n_epochs):  # loop over the dataset multiple times
+    for epoch in range(start_epoch, n_epochs+1):  # loop over the dataset multiple times
         step_loss = []
         model.train()
         #get an image from the train loader
